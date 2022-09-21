@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PATH_FILE = path.join(__dirname, '../Address.csv')
+const PATH_FILE = path.join(__dirname, '../static_file/Address.csv')
 
 const mainFunction = () => {
     fs.readFile(PATH_FILE, 'utf8', (err, data) => {
