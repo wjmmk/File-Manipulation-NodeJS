@@ -4,7 +4,8 @@
   "description": "tech test",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./src/index"
+    "start": "node ./src/index",
+    "docker": "docker-compose up"
   },
   "author": "wjmmk",
   "license": "ISC"
