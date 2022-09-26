@@ -18,7 +18,7 @@ services:
   redis:
     image: redis
     container_name: node_challenge_redis
-    restart: always
+    restart: on-failure
     depends_on:
       - redis-overcommit
     environment:
@@ -28,3 +28,12 @@ services:
       - "6380:6380"
     expose:
       - "6380"
+
+  redis-commander:
+    container_name: node_challenge_commander
+    image: rediscommander/redis-commander
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:redis:6380
+    ports:
+      - "8081:8081"
