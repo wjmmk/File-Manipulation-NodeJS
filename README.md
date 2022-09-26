@@ -6,4 +6,4 @@ NodeJS Application Dockerized, which reads flat files and optimizes RAM manageme
 
 ## Evidence ~ Image
 
-![](static_files/image.png)
+![](Static_Files/image.png)
