@@ -8,5 +8,8 @@
     "docker": "docker-compose up"
   },
   "author": "wjmmk",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^4.0.1"
+  }
 }
